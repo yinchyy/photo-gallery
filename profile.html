@@ -29,7 +29,11 @@
           <div class="row">
               <!--container, col, seperated-->
               <div class="col-3 d-flex justify-content-center">
-                      <img src="images/bird_profile.jpg" class="rounded-circle" style="height: 190px; width:190px;" alt="@snowysnow_wolf-winter.jpg"/>
+                <picture>
+                  <source media="(min-width:576px)" srcset="images/bird_profile.jpg">
+                  <source media="(max-width:575px)" srcset="images/bird_profile_sm.jpg">
+                  <img src="images/bird_profile.jpg" class="rounded-circle" alt="@snowysnow_wolf-winter.jpg"/>
+                </picture>      
               </div>
               <div class="col-7">                        
                 <p class="h4">Jon Snow <small class="text-muted">@snowysnow</small></p>
